@@ -10,6 +10,8 @@ const eslint = require('gulp-eslint');
 const babel = require('gulp-babel');
 const livereload = require('gulp-livereload');
 const imagemin = require('gulp-imagemin');
+const runSequence = require('run-sequence');
+const del = require('del');
 
 gulp.task('sass:dev', function () {
     var plugins = [
@@ -68,10 +70,25 @@ gulp.task('fonts', function(){
     .pipe(gulp.dest('./assets/fonts')) 
 });
 
-gulp.task('lib', function(){
+gulp.task('lib:js', function(){
     return gulp.src('assets/src/lib/**/*.js')
     .pipe(uglify())
     .pipe(gulp.dest('./assets/lib')) 
+});
+
+gulp.task('lib:css', function(){
+    var plugins = [
+        autoprefixer({browsers: ['last 2 version']}),
+        cssnano()
+    ];
+
+    return gulp.src('assets/src/lib/**/*.css')
+    .pipe(postcss(plugins))
+    .pipe(gulp.dest('./assets/lib')) 
+});
+
+gulp.task('lib:clean', function(){
+    return del('./assets/lib');
 });
 
 gulp.task('images', function(){
@@ -85,5 +102,14 @@ gulp.task('images', function(){
     .pipe(gulp.dest('./assets/img')) 
 });
 
+gulp.task('images:clean', function(){
+    return del('./assets/img');
+});
+
+gulp.task('build-clean', ['lib:clean', 'images:clean']);
+gulp.task('build-base', ['lib:js', 'lib:css', 'fonts', 'images']);
+gulp.task('build-scripts', ['sass:prod', 'js:prod']);
 gulp.task('dev', ['sass:dev', 'js:dev', 'watch']);
-gulp.task('build', ['sass:prod', 'js:prod', 'fonts', 'lib', 'images']);
+gulp.task('build', 
+    runSequence('build-clean', 'build-base', 'build-scripts')
+);

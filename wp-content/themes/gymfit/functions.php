@@ -20,7 +20,7 @@ function add_assets() {
   wp_enqueue_script('tether-js');
 
   // Register Bootstrap Js
-  wp_register_script('bootstrap-js', get_template_directory_uri() . '/assets/lib/bootstrap/bootstrap.min.js', array(), false, true);
+  wp_register_script('bootstrap-js', get_template_directory_uri() . '/assets/lib/bootstrap/js/bootstrap.min.js', array(), false, true);
   wp_enqueue_script('bootstrap-js');
 
   // Register Bootstrap Css
