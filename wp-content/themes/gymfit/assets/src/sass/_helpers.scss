@@ -1,1 +1,15 @@
 // Helpers
+
+// Medium devices (tablets, 768px and up)
+.mw-md-75 {
+    @media (min-width: 768px) { 
+        max-width: 75%;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+.mw-lg-50 {
+    @media (min-width: 992px) { 
+        max-width: 50%;
+    }
+}
