@@ -31,16 +31,8 @@
 			<!-- header -->
 			<header class="header clear" role="banner">
 				<!-- contact -->
-				<section class="container-fluid bg-black text-light d-none d-lg-block py-2 px-4">
-					<div class="row justify-content-right">
-						<p class="col-10 text-right">Contáctame al 8888-8888</p>
-						<!-- Social Media -->
-						<div class="col-2">
-							<a class="" href="https://www.instagram.com/cesarjara85/">Instagram</a>
-							<a class="" href="https://www.facebook.com/cesarjara85">Facebook</a>
-						</div>
-						<!-- Social Media -->
-					</div>
+				<section class="container-fluid bg-black text-light d-none d-md-block py-2 px-4">
+					<?php get_template_part( 'partials/contact' ) ?>
 				</section>
 				<!-- contact -->
 				<!-- nav -->
@@ -56,22 +48,22 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav mr-auto">
 							<li class="nav-item active">
-								<a class="nav-link" href="about">Acerca de <span class="sr-only">(current)</span></a>
+								<a class="nav-link" href="/cesardev/acerca-de">Acerca de <span class="sr-only">(current)</span></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Servicios</a>
+								<a class="nav-link" href="/cesardev/servicios">Servicios</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Resultados</a>
+								<a class="nav-link" href="/cesardev/resultados">Resultados</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Tienda</a>
+								<a class="nav-link" href="/cesardev/tienda">Tienda</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Blog</a>
+								<a class="nav-link" href="/cesardev/blog">Blog</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Contacto</a>
+								<a class="nav-link" href="/cesardev/contacto">Contacto</a>
 							</li>
 						</ul>
 					</div>

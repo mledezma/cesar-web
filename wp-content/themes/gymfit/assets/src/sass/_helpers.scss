@@ -13,3 +13,18 @@
         max-width: 50%;
     }
 }
+
+// Icons
+.icon-sm {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+}
+
+// Images
+.vertical-align-image {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
