@@ -1,1 +1,30 @@
 // Helpers
+
+// Medium devices (tablets, 768px and up)
+.mw-md-75 {
+    @media (min-width: 768px) { 
+        max-width: 75%;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+.mw-lg-50 {
+    @media (min-width: 992px) { 
+        max-width: 50%;
+    }
+}
+
+// Icons
+.icon-sm {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+}
+
+// Images
+.vertical-align-image {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
