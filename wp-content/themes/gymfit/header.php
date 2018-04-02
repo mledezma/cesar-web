@@ -48,22 +48,22 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav mr-auto">
 							<li class="nav-item active">
-								<a class="nav-link" href="/cesardev/acerca-de">Acerca de <span class="sr-only">(current)</span></a>
+								<a class="nav-link" href="/cesar-web/acerca-de">Acerca de <span class="sr-only">(current)</span></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="/cesardev/servicios">Servicios</a>
+								<a class="nav-link" href="/cesar-web/servicios">Servicios</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="/cesardev/resultados">Resultados</a>
+								<a class="nav-link" href="/cesar-web/resultados">Resultados</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="/cesardev/tienda">Tienda</a>
+								<a class="nav-link" href="/cesar-web/tienda">Tienda</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="/cesardev/blog">Blog</a>
+								<a class="nav-link" href="/cesar-web/blog">Blog</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="/cesardev/contacto">Contacto</a>
+								<a class="nav-link" href="/cesar-web/contacto">Contacto</a>
 							</li>
 						</ul>
 					</div>
