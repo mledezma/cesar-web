@@ -1,0 +1,6 @@
+@mixin icon($color) {
+  $color: replaceFirst('#{$color}', '%23');
+
+  background-image: url('data:image/svg+xml;utf8,\
+  ');
+}
