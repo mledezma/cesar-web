@@ -1,0 +1,33 @@
+.banner-intro {
+  align-items: center;
+  background-color: $blue;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80vh;
+  position: relative;
+  text-align: center;
+
+  &:before {
+    background-color: rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+  @include media-breakpoint-down('sm') {
+    background-image: none !important;
+  }
+
+  .container {
+    z-index: 2;
+  }
+}
+
+.banner-intro__title {
+  color: $white;
+  text-align: center;
+  margin-bottom: 4rem;
+}
