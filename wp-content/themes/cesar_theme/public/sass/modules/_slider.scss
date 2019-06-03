@@ -1,0 +1,28 @@
+.slider-steps__prev,
+.slider-steps__next {
+  @include arrow-right($red);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  position: absolute;
+  top: 25%;
+  transform: rotateY(0) translateY(-50%);
+  width: 50px;
+  z-index: 2;
+
+  @media screen and (min-width: 530px) {
+    top: 30%;
+  }
+}
+
+.slider-steps__next {
+  right: 0;
+}
+
+.slider-steps__prev {
+  left: 0;
+  transform: rotateY(180deg) translateY(-50%);
+}

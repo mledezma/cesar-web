@@ -1,0 +1,75 @@
+.step {
+  text-align: center;
+
+  @include media-breakpoint-up($mainBreakpoint) {
+    display: flex;
+    margin-bottom: 4rem;
+  }
+}
+
+.step__image {
+  margin: 0 auto .7rem;
+  max-width: 260px;
+  object-fit: contain;
+  width: 100%;
+
+  @include media-breakpoint-up($mainBreakpoint) {
+    max-width: 240px;
+  }
+}
+
+.step__title {
+  font-family: 'Petit Formal Script', cursive;
+  font-size: 2.2rem;
+  margin-bottom: 1.4rem;
+}
+
+.step__content {
+  font-size: .9rem;
+  line-height: 1.2;
+  margin-bottom: 2.5rem;
+}
+
+
+.step--left {
+  .step__col-1 {
+    order: 1;
+    padding-right: 3rem;
+    text-align: right;
+  }
+
+  .step__col-2 {
+    order: 2;
+    text-align: left;
+  }
+}
+
+.step--right {
+  .step__col-1 {
+    order: 2;
+    padding-left: 3rem;
+    text-align: left;
+  }
+
+  .step__col-2 {
+    order: 1;
+    text-align: right;
+
+    p {
+      margin-left: auto;
+    }
+  }
+}
+
+
+.step__col-2 p {
+  max-width: 300px;
+}
+
+.step-container {
+  display: none;
+
+  @include media-breakpoint-up($mainBreakpoint) {
+    display: block;
+  }
+}

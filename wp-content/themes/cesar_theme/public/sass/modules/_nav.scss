@@ -1,0 +1,40 @@
+.navbar {
+  align-items: center;
+  box-shadow: 0px 1px 8px 0px rgba(105, 105, 105, 0.5);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+
+  .logo {
+    width: 100px;
+
+    @include media-breakpoint-up($mainBreakpoint) {
+      width: 140px;
+    }
+  }
+
+  .btn {
+    display: none;
+
+    @include media-breakpoint-up($mainBreakpoint) {
+      display: inline-block;
+    }
+  }
+}
+
+.nav {
+  display: none;
+  flex: 1;
+  justify-content: space-evenly;
+  max-width: 560px;
+
+  @include media-breakpoint-up($mainBreakpoint) {
+    display: flex;
+  }
+
+  a {
+    font-size: .8rem;
+    padding: .5rem;
+    text-align: center;
+  }
+}

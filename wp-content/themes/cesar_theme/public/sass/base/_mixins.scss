@@ -1,0 +1,13 @@
+@mixin arrow-right($color) {
+  $color: replaceFirst('#{$color}', '%23');
+
+  background-image: url('data:image/svg+xml;utf8,\
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 81.38 84.73" style="enable-background:new 0 0 81.38 84.73;" xml:space="preserve">\
+      <style type="text/css">\
+        .st0{fill:none;stroke:#{$color};stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;}\
+      </style>\
+      <line class="st0" x1="75.27" y1="43.08" x2="49.5" y2="10.97"/>\
+      <line class="st0" x1="75.27" y1="43.08" x2="49.5" y2="75.2"/>\
+      <line class="st0" x1="72.62" y1="43.08" x2="6.05" y2="43.08"/>\
+    </svg>');
+}

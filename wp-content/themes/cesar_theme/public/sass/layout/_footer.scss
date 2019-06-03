@@ -1,0 +1,32 @@
+.footer {
+  align-items: center;
+  background-color: $black;
+  display: flex;
+  font-size: .7rem;
+  justify-content: center;
+  padding: .8rem .5rem;
+
+  p {
+    flex: 1;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  p,
+  a {
+    color: $gray;
+  }
+
+  .fab {
+    font-size: 1.2rem;
+    margin-right: .7rem;
+  }
+
+  a:last-child .fab {
+    margin-right: 0;
+  }
+
+  a:hover {
+    color: $red;
+  }
+}
