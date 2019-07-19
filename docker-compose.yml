@@ -1,0 +1,44 @@
+version: '2'
+
+services:
+  mysql:
+    image: mysql:5.7
+    restart: always
+    ports:
+      - 8081:3306
+    environment:
+      MYSQL_USER: wordpress
+      MYSQL_ROOT_PASSWORD: wordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_PASSWORD: wordpress
+
+  wordpress:
+    depends_on:
+      - mysql
+    image: wordpress
+    ports:
+      - 8080:80
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: mysql:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+    volumes:
+      - ./wp-content/themes/cesar_theme:/var/www/html/wp-content/themes/cesar_theme
+      - ./wp-content/plugins:/var/www/html/wp-content/plugins
+#     environment:
+#       VIRTUAL_HOST: cesar.dev
+#       VIRTUAL_PORT: 8585
+#       WORDPRESS_DB_HOST: mysql:4506
+#       WORDPRESS_DB_USER: wordpress
+#       WORDPRESS_DB_PASSWORD: wordpress
+#     networks:
+#       - frontend
+#       - backend
+
+
+# networks:
+#   backend:
+#   frontend:
+#     external:
+#       name: proxy
