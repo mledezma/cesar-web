@@ -4,7 +4,7 @@
     <div class="row justify-content-between">
       <div class="col-12 col-md-6 col-lg-4">
         <?php 
-          $GLOBALS['card'] = array(
+          $GLOBALS['card-blog'] = array(
             'img' => array(
               'url' => 'https://via.placeholder.com/450x320',
               'alt' => 'Image Alt'

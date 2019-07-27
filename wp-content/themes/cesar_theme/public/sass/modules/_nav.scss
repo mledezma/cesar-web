@@ -27,6 +27,7 @@
   flex: 1;
   justify-content: space-evenly;
   max-width: 560px;
+  position: relative;
 
   @include media-breakpoint-up($mainBreakpoint) {
     display: flex;
@@ -37,4 +38,27 @@
     padding: .5rem;
     text-align: center;
   }
+}
+
+.nav__dropdown {
+  padding-left: 0;
+  position: relative;
+  
+  &:hover {
+    .nav__sub {
+      display: flex;
+    }
+  }
+}
+
+.nav__sub {
+  background-color: rgba(#fff, 0.5);
+  box-shadow: 0px 1px 8px 0px rgba(105, 105, 105, 0.5);
+  display: none;
+  flex-direction: column;
+  left: 50%;
+  position: absolute;
+  top: 100%;
+  transform: translateX(-50%);
+  z-index: 2;
 }

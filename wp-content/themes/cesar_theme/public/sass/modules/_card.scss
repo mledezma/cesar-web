@@ -45,3 +45,53 @@
   margin-bottom: 15px;
   text-align: center;
 }
+
+.card-category {
+  border-bottom: 1px solid $red;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+
+  @include media-breakpoint-up(lg) {
+    flex-direction: row-reverse;
+  }
+
+  img {
+    flex-basis: 50%;
+    object-fit: cover;
+    max-width: 100%;
+  }
+}
+
+.card-category__title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 0;
+  }
+}
+
+.card-category__date {
+  font-size: 14px;
+  margin-bottom: 0;
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 20px;
+  }
+}
+
+.card-category__author {
+  font-size: 14px;
+}
+
+.card-category__content {
+  display: none;
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+    margin-bottom: 0;
+  }
+}

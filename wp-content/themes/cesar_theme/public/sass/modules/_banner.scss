@@ -31,3 +31,60 @@
   text-align: center;
   margin-bottom: 4rem;
 }
+
+.banner-category {
+  border-bottom: 2px solid $red;
+  position: relative;
+
+  img {
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+
+    @include media-breakpoint-up(lg) {
+      max-height: 70vh;
+    }
+  }
+}
+
+.banner-category__side {
+  @include media-breakpoint-up(md) {
+    align-items: center;
+    background-color: rgba(#000, 0.3);
+    display: flex;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.banner-category__title {
+  background-color: $red;
+  color: #fff;
+  font-family: 'Petit Formal Script', cursive;
+  margin-bottom: 0;
+  padding: 16px 40px;
+
+  @include media-breakpoint-up(md) {
+    align-items: center;
+    background-color: rgba($red, 0.5);
+    display: flex;
+    justify-content: center;
+    max-width: 650px;
+    width: 50%;
+  }
+}
+
+.banner-single {
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 40px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}

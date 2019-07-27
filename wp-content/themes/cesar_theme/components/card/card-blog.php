@@ -1,5 +1,5 @@
 <?php
-  $card = $GLOBALS['card'];
+  $card = $GLOBALS['card-blog'];
   $img = array(
     'url' => isset($card['img']['url']) ? $card['img']['url'] : 'https://via.placeholder.com/450x320',
     'alt' => isset($card['img']['alt']) ? $card['img']['alt'] : 'Alt image'

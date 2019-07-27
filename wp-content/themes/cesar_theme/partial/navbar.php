@@ -4,12 +4,19 @@
     <div class="icon-hamburger"></div>
   </div>
   <nav class="nav">
-    <a href="#">Acerca de</a>
-    <a href="#">Servicios</a>
+    <!-- <a href="#">Acerca de</a> -->
+    <!-- <a href="#">Servicios</a>
     <a href="#">Resultados</a>
-    <a href="#">Tienda</a>
-    <a href="#">Blog</a>
-    <a href="#">Contacto</a>
+    <a href="#">Tienda</a> -->
+    <ul href="#" class="nav__dropdown">
+      <a href="#">Blog</a>
+      <nav class="nav__sub">
+        <a href="<?= get_site_url() ?>/categoria/salud">Salud</a>
+        <a href="<?= get_site_url() ?>/categoria/laboral">Laboral</a>
+        <a href="<?= get_site_url() ?>/categoria/personal">Personal</a>
+      </nav>
+    </ul>
+    <!-- <a href="#">Contacto</a> -->
   </nav>
   <a href="#" class="btn">Empezar</a>
 </div>

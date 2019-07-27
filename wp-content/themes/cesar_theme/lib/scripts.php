@@ -101,5 +101,8 @@ function init_scripts() {
 // add_action('wp_head', 'jquery_local_fallback');
 add_action('wp_enqueue_scripts', 'scripts', 100);
 
+add_filter( 'excerpt_length', function($length) {
+  return 20;
+} );
 
 ?>
