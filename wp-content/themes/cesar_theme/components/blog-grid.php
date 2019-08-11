@@ -2,7 +2,7 @@
   <h3 class="text-center text-white mb-4">Últimos tips y guías</h3>
   <div class="container mt-5 pt-lg-3">
     <div class="row justify-content-between">
-      <div class="col-12 col-md-6 col-lg-4">
+      <div class="col-12 col-md-6 col-lg-4 mb-5">
         <?php 
           $GLOBALS['card-blog'] = array(
             'img' => array(
@@ -21,7 +21,7 @@
           get_template_part('components/card/card', 'blog');
         ?>
       </div>
-      <div class="col-12 col-md-6 col-lg-4">
+      <div class="col-12 col-md-6 col-lg-4 mb-5">
         <?php 
           $GLOBALS['card'] = array(
             'img' => array(
