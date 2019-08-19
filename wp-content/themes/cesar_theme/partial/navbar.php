@@ -16,7 +16,7 @@
         <a href="<?= get_site_url() ?>/categoria/personal">Personal</a>
       </nav>
     </ul>
-    <!-- <a href="#">Contacto</a> -->
+    <a href="<?= get_permalink(get_page_by_path('contacto')) ?>">Contacto</a>
   </nav>
   <a href="#" class="btn">Empezar</a>
 </div>
