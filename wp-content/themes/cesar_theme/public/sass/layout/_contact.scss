@@ -8,8 +8,14 @@
 }
 
 .contact__content {
+  background-color: $red;
   color: #fff;
+  height: 100vh;
   text-align: center;
+
+  @include media-breakpoint-up($mainBreakpoint) {
+    height: auto;
+  }
 
   a {
     color: #9B9997;
@@ -34,11 +40,31 @@
 }
 
 .contact__container {
-  background-color: $red;
-  height: 100vh;
+  position: relative;
 
   @include media-breakpoint-up($mainBreakpoint) {
-    height: 90vh;
-    padding-top: 4rem;
+    padding: 0 3rem;
+  }
+}
+
+.contact__container-left {
+  display: none;
+  
+  @include media-breakpoint-up($mainBreakpoint) {
+    display: block;
+    max-width: 50%;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.contact__container-right {
+  @include media-breakpoint-up($mainBreakpoint) {
+    margin-left: auto;
+    max-width: 60%;
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+    position: relative;
+    z-index: 2;
   }
 }
