@@ -114,4 +114,5 @@ add_filter('upload_mimes', 'cc_mime_types');
 
 // CTP
 include_once('CPT/services.php');
+include_once('CPT/earnings.php');
 ?>

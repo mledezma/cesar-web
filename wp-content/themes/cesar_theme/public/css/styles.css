@@ -12929,6 +12929,31 @@ pre {
     .card-service__month {
       font-size: 30px; } }
 
+.card-earning {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem; }
+
+.card-earning__image {
+  flex-basis: 45%;
+  max-width: 45%; }
+
+.card-earning__content {
+  flex-basis: 50%;
+  max-width: 50%; }
+
+.card-earning__title {
+  background-color: #fff;
+  color: #a5181a;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 0 10px 10px; }
+
+.card-earning__description {
+  color: #fff;
+  font-size: 14px; }
+
 .input {
   background-color: #a5181a;
   border: none;
@@ -13062,6 +13087,18 @@ pre {
   font-weight: bold;
   margin-bottom: 2rem;
   padding-top: 5rem;
+  text-align: center; }
+
+.earnings-section {
+  background-color: #25373a;
+  padding: 60px 0; }
+
+.earnings-section__title {
+  color: #fff;
+  font-family: 'Petit Formal Script', cursive;
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin-bottom: 5rem;
   text-align: center; }
 
 .bg-white {

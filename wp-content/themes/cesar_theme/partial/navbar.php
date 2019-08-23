@@ -5,8 +5,8 @@
   </div>
   <nav class="nav">
     <a href="<?= get_permalink(get_page_by_path('acerca-de')) ?>">Acerca de</a>
-    <!-- <a href="#">Servicios</a>
-    <a href="#">Resultados</a>
+    <a href="<?= get_permalink(get_page_by_path('servicios')) ?>">Servicios</a>
+    <!-- <a href="#">Resultados</a>
     <a href="#">Tienda</a> -->
     <ul href="#" class="nav__dropdown">
       <a href="#">Blog</a>

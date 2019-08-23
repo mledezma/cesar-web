@@ -162,3 +162,33 @@
     font-size: 30px;
   }
 }
+
+.card-earning {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.card-earning__image {
+  flex-basis: 45%;
+  max-width: 45%;
+}
+
+.card-earning__content {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.card-earning__title {
+  background-color: #fff;
+  color: $red;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 0 10px 10px;
+}
+
+.card-earning__description {
+  color: #fff;
+  font-size: 14px;
+}
