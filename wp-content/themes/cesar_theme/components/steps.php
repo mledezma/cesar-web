@@ -1,5 +1,5 @@
 <div class="py-5 container">
-  <h3 class="text-center mb-4">Mis secretos para una vida saludable</h3>
+  <h3 class="text-center mb-4 mb-lg-5 pb-lg-3">Mis secretos para una vida saludable</h3>
 
   <!-- Steps Mobile -->
   <div class="position-relative d-md-none">

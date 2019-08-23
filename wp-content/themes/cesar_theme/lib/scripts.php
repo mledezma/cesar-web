@@ -115,4 +115,13 @@ add_filter('upload_mimes', 'cc_mime_types');
 // CTP
 include_once('CPT/services.php');
 include_once('CPT/earnings.php');
+include_once('CPT/results.php');
+
+// Trucate Text by Word
+function trunc($phrase, $max_words) {
+  $phrase_array = explode(' ',$phrase);
+  if(count($phrase_array) > $max_words && $max_words > 0)
+     $phrase = implode(' ',array_slice($phrase_array, 0, $max_words)).'...';
+  return $phrase;
+}
 ?>

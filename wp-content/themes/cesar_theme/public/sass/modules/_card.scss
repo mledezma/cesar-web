@@ -192,3 +192,31 @@
   color: #fff;
   font-size: 14px;
 }
+
+.card-video {
+  margin: 0 auto 1.5rem;
+  padding: 1rem;
+  width: 320px;
+
+  iframe {
+    width: 100% !important;
+  }
+}
+
+.card-video__title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 1.5rem;
+}
+
+.card-video__position {
+  font-size: 18px;
+  margin-bottom: 1.2rem;
+}
+
+.card-video__quote {
+  font-size: 14px;
+  line-height: 1.2;
+  margin-bottom: 0;
+}

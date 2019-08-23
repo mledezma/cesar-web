@@ -18,6 +18,10 @@
   @include media-breakpoint-down(sm) {
     background-image: none !important;
   }
+
+  @include media-breakpoint-up(md) {
+    height: 88vh;
+  }
 }
 
 .page-about__title {

@@ -28,8 +28,6 @@
               'content' => $content,
               'price' => $price
             );
-
-
           ?>
             <div class="col-4 px-2 px-xl-5">
               <?php get_template_part('components/card/card', 'service') ?>
