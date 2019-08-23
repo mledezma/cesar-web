@@ -95,3 +95,70 @@
     margin-bottom: 0;
   }
 }
+
+.card-service {
+  border-top: 12px solid $red;
+  border-right: 4px solid $red;
+  padding: 40px 20px 0;
+  text-align: center;
+
+  @include media-breakpoint-up($mainBreakpoint) {
+    padding: 60px 40px 0;    
+  }
+}
+
+.card-service__image {
+  margin-bottom: 40px;
+  max-width: 100%;
+}
+
+.card-service__title {
+  color: $red;
+  text-align: center;
+
+  @include media-breakpoint-up($mainBreakpoint) {
+    font-size: 34px;
+  }
+}
+
+.card-service__description {
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 30px;
+
+  @include media-breakpoint-up($mainBreakpoint) {
+    font-size: 16px;    
+  }
+}
+
+.card-service__price {
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+
+  @include media-breakpoint-up($mainBreakpoint) {
+    font-size: 16px;    
+  }
+}
+
+.card-service__quote {
+  color: $red;
+  font-size: 24px;
+  display: block;
+  margin-top: 20px;
+
+  @include media-breakpoint-up($mainBreakpoint) {
+    font-size: 28px;
+  }
+}
+
+.card-service__month {
+  color: $red;
+  font-size: 26px;
+  display: block;
+
+  @include media-breakpoint-up($mainBreakpoint) {
+    font-size: 30px;
+  }
+}

@@ -25,6 +25,14 @@ Slider.init = function () {
   $('.slider-steps__next').on('click', function() {
     $('.slider-steps').slick('slickNext');
   });
+
+  slick.init($('.slider-services'), {
+    swipeToSlide: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true
+  });
+
 };
 
 module.exports = Slider;

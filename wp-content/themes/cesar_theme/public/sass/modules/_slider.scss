@@ -33,3 +33,25 @@
     display: none;
   }
 }
+
+.slider-services {
+  .slick-list {
+    padding: 0 20% !important;
+  }
+
+  .slick-slide {
+    opacity: 0.4;
+    padding-top: 40px;
+    transition: opacity .5s, padding-top .5s;
+  }
+
+  .slick-current.slick-center {
+    opacity: 1;
+    padding-top: 0;
+  }
+
+  .slick-prev,
+  .slick-next {
+    display: none;
+  }
+}

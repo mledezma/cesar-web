@@ -12779,6 +12779,22 @@ pre {
 .slider-steps .slick-next {
   display: none; }
 
+.slider-services .slick-list {
+  padding: 0 20% !important; }
+
+.slider-services .slick-slide {
+  opacity: 0.4;
+  padding-top: 40px;
+  transition: opacity .5s, padding-top .5s; }
+
+.slider-services .slick-current.slick-center {
+  opacity: 1;
+  padding-top: 0; }
+
+.slider-services .slick-prev,
+.slider-services .slick-next {
+  display: none; }
+
 .card-blog {
   text-align: center; }
 
@@ -12858,6 +12874,60 @@ pre {
     .card-category__content {
       display: block;
       margin-bottom: 0; } }
+
+.card-service {
+  border-top: 12px solid #a5181a;
+  border-right: 4px solid #a5181a;
+  padding: 40px 20px 0;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .card-service {
+      padding: 60px 40px 0; } }
+
+.card-service__image {
+  margin-bottom: 40px;
+  max-width: 100%; }
+
+.card-service__title {
+  color: #a5181a;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .card-service__title {
+      font-size: 34px; } }
+
+.card-service__description {
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 30px; }
+  @media (min-width: 768px) {
+    .card-service__description {
+      font-size: 16px; } }
+
+.card-service__price {
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .card-service__price {
+      font-size: 16px; } }
+
+.card-service__quote {
+  color: #a5181a;
+  font-size: 24px;
+  display: block;
+  margin-top: 20px; }
+  @media (min-width: 768px) {
+    .card-service__quote {
+      font-size: 28px; } }
+
+.card-service__month {
+  color: #a5181a;
+  font-size: 26px;
+  display: block; }
+  @media (min-width: 768px) {
+    .card-service__month {
+      font-size: 30px; } }
 
 .input {
   background-color: #a5181a;
@@ -12984,6 +13054,15 @@ pre {
     padding-bottom: 3rem;
     position: relative;
     z-index: 2; } }
+
+.services__title {
+  color: #a5181a;
+  font-family: 'Petit Formal Script', cursive;
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  padding-top: 5rem;
+  text-align: center; }
 
 .bg-white {
   background-color: #fff; }
