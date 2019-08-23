@@ -10,5 +10,5 @@
   <h4 class="card-service__title"><?= $title ?></h4>
   <p class="card-service__description"><?= $content ?></p>
   <p class="card-service__price"> Con un costo de: <span class="card-service__quote"><?= $price ?></span><span class="card-service__month">mensuales</span></p>
-  <a href="#" class="btn">Leer más</a>
+  <a href="<?= get_permalink(get_page_by_path('contacto')) ?>?service=<?=$title?>&price=<?=$price?>" class="btn">Leer más</a>
 </div>

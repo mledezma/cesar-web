@@ -17,5 +17,5 @@
     </ul>
     <a href="<?= get_permalink(get_page_by_path('contacto')) ?>">Contacto</a>
   </nav>
-  <a href="#" class="btn">Empezar</a>
+  <a href="<?= get_permalink(get_page_by_path('contacto')) ?>" class="btn">Empezar</a>
 </div>

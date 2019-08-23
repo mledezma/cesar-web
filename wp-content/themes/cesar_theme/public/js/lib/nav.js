@@ -10,7 +10,6 @@ var nav = {
 
 nav.init = function() {
   var {btn, menu} = this;
-  console.log(btn);
   
   btn.click(() => {
     if (this.state === 'close') {

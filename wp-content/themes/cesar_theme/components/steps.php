@@ -57,7 +57,7 @@
       </div>
     </div>
     <div class="text-center">
-      <a href="#" class="btn">Empezar ahora</a>
+      <a href="<?= get_permalink(get_page_by_path('contacto')) ?>" class="btn">Empezar ahora</a>
     </div>
   </div>
 </div>

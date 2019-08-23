@@ -16,7 +16,7 @@
       <div class="page-about__content">
         <?php the_content() ?>
       </div>
-      <a href="#" class="btn">Deseo cambiar mi vida</a>
+      <a href="<?= get_permalink(get_page_by_path('contacto')) ?>" class="btn">Deseo cambiar mi vida</a>
     </div>
   </div>
 <?php	endwhile;?>
