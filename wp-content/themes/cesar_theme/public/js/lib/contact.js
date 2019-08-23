@@ -13,8 +13,12 @@ contact.setParams = function() {
   var price = url.searchParams.get('price');
   var service = url.searchParams.get('service');
 
-  $('.price').val(price);
-  $('.package').val(service);
+  $('.price').attr('value', price);
+  $('.package').attr('value', service);
+
+  $('form').submit(function() {
+    console.log($('form').serialize());
+  });
 }
 
 contact.init = function() {
