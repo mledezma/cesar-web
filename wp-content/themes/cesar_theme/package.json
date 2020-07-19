@@ -41,7 +41,7 @@
     "imagemin-pngquant": "^6.0.1",
     "inquirer": "^6.5.0",
     "izitoast": "^1.4.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "json-update": "^4.0.0",
     "moment": "^2.24.0",
     "nodemon": "^1.19.1",
